@@ -16,3 +16,43 @@ if (this_device) {
 
 }
 
+$(function () {
+
+});
+
+var b = $('.submit-btn');
+var c = $('.count-number');
+var add = 1;
+
+b.click(function () {
+  var idx = b.index(this);
+  if (idx == 0) {
+    t();
+    add++
+    modalNext('.quiz', '1', '2');
+    c.text(add);
+  } else if (idx == 4) {
+    t();
+    add++
+    modalNext('.quiz', '2', '3');
+    c.text(add);
+  } else {
+    f();
+  }
+});
+
+function modalNext(page, current, next) {
+  $(page + '-' + current).addClass('hidden');
+  if (next === 'end') {
+    modalClose();
+  } else {
+    $(page + '-' + next).removeClass('hidden');
+  }
+}
+
+function t() {
+  alert('정답! 잘하네?');
+}
+function f() {
+  alert('이것도 못 맞춤?');
+}
