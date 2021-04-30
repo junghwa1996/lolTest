@@ -9,9 +9,9 @@ if (this_device) {
     console.log('MOBILE');
   } else {
     console.log('PC');
-    // alert('모바일 환경에서만 실행 가능합니다.');
+    alert('모바일 환경에서만 실행 가능합니다.');
     var body = document.getElementById("wrap");
-    // body.style.display = "none";
+    body.style.display = "none";
   }
 
 }
