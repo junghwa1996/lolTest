@@ -1,0 +1,136 @@
+html {
+	color: #222;
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+audio, canvas, iframe, img, svg, video {
+	vertical-align: middle;
+}
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+textarea {
+	resize: vertical;
+}
+
+.hidden, [hidden] {
+	display: none !important;
+}
+
+.sr-only {
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+html {
+	font-size: 62.5%;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+html, body, div, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, ul, li, form, fieldset, legend, address, figure, hr, object, iframe, img, button, input, select, textarea, label, a, span, em, strong, small, sub, sup, table, caption, thead, tbody, tfoot, tr, th, td, article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+
+ul, ol, dl {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+button {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	background: none;
+	cursor: pointer;
+}
+
+input, select, textarea {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+
+input[type="radio"], input[type="checkbox"], select {
+	cursor: pointer;
+}
+a{
+  display: block;
+}
+
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+	overflow: hidden;
+	overflow-y: auto;
+	padding-left: calc(100vw - 100%);
+}
+#wrap {
+	width: 100%;
+  max-width: 720px;
+	margin: 0 auto;
+	overflow-x: hidden;
+	z-index: 15;
+}
+.container{width: 100%; margin: 0 auto; padding: 0 3rem;}
+
+header{width: 100%; background-color: #eee; text-align: center; padding: 3rem 0;}
+header h1{font-size: 2.5rem; font-weight: bold;}
+
+.main{width: 100%; height: 100%;}
+.main .container{position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+
+.main .title{padding: 5rem 0; text-align: center;}
+.main .title h2{font-size: 5rem;}
+.main .title p{font-size: 3rem; margin-top: 3rem; margin-bottom: 3rem;}
+
+.main .content a{width: 30rem; height: 10rem; margin-left: auto; margin-right: auto;}
+.main .content button{width: 100%; height: 100%; background-color: #eee; font-size: 3rem;}
+
+
+
+
+
+@media (max-width: 720px) {
+	html {
+		font-size: 1.388888888888889vw;
+	}
+}
