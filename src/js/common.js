@@ -1,4 +1,3 @@
-
 var pc_device = "win16|win32|win64|mac|macintel";
 
 // 접속한 디바이스 환경
@@ -16,3 +15,4 @@ if (this_device) {
   }
 
 }
+
