@@ -104,6 +104,9 @@ body {
 	overflow: hidden;
 	overflow-y: auto;
 }
+img{
+	width: 100%;
+}
 #wrap {
 	width: 100%;
 	margin: 0 auto;
@@ -137,9 +140,14 @@ footer button{background-color: #aaa; color: #fff; padding: 2rem 4rem; border-ra
 .start .quiz{text-align: center;}
 .start .quiz .title{padding: 3rem 0; font-size: 5rem;}
 .start .quiz .content{font-size: 3rem; padding: 15rem 0; display: flex; justify-content: center; align-items: center;}
+
+.start .quiz.Qimg .content{padding: 0 0 4rem; flex-direction: column;}
+.start .quiz.Qimg .content .img-box{width: 20rem; height: 20rem; margin-bottom: 2rem;}
+
 .start .answer{margin-bottom: 5rem;}
 .start .answer .answer-btn button{width: 100%; background-color: #eee; height: 18rem; border-radius: 2rem; font-size: 3rem; font-weight: bold;}
 .start .answer .answer-btn button:not(:last-child){margin-bottom: 2rem;}
+
 
 
 

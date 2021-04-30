@@ -26,6 +26,7 @@ var add = 1;
 
 b.click(function () {
   var idx = b.index(this);
+  console.log(idx);
   if (idx == 0) {
     t();
     add++
@@ -36,7 +37,12 @@ b.click(function () {
     add++
     modalNext('.quiz', '2', '3');
     c.text(add);
-  } else {
+  } else if (idx == 8) {
+    t();
+    add++
+    modalNext('.quiz', '3', '4');
+    c.text(add);
+  }else {
     f();
   }
 });
