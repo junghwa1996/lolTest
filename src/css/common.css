@@ -81,6 +81,7 @@ button {
 	outline: none;
 	background: none;
 	cursor: pointer;
+	display: block;
 }
 
 input, select, textarea {
@@ -111,19 +112,28 @@ body {
 	z-index: 15;
 }
 .container{width: 100%; margin: 0 auto; padding: 0 3rem;}
-
+/* header */
 header{width: 100%; background-color: #eee; text-align: center; padding: 3rem 0;}
 header h1{font-size: 2.5rem; font-weight: bold;}
-
+/* main */
 .main{width: 100%; height: 100%;}
 .main .container{position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
 
-.main .title{padding: 5rem 0; text-align: center;}
-.main .title h2{font-size: 5rem;}
-.main .title p{font-size: 3rem; margin-top: 3rem; margin-bottom: 3rem;}
+.index .main .title{padding: 5rem 0; text-align: center;}
+.index .main .title h2{font-size: 5rem;}
+.index .main .title p{font-size: 3rem; margin-top: 3rem; margin-bottom: 3rem;}
 
-.main .content a{width: 30rem; height: 10rem; margin-left: auto; margin-right: auto;}
-.main .content button{width: 100%; height: 100%; background-color: #eee; font-size: 3rem;}
+.index .main .content a{width: 30rem; height: 10rem; margin-left: auto; margin-right: auto;}
+.index .main .content button{width: 100%; height: 100%; background-color: #eee; font-size: 3rem;}
+/* start */
+.start .count-box{text-align: right; font-size: 3rem; padding: 3rem 0; border-bottom: 1px solid #eee;}
+.start .count-box strong{color: #bbb;}
+
+.start .quiz{text-align: center;}
+.start .quiz .title{padding: 3rem 0; font-size: 5rem;}
+.start .quiz .content{font-size: 3rem; height: 20rem; display: flex; justify-content: center; align-items: center; margin-bottom: 10rem;}
+.start .quiz .answer-btn button{width: 100%; background-color: #eee; height: 20rem; border-radius: 2rem; font-size: 3rem; font-weight: bold;}
+.start .quiz .answer-btn button:not(:last-child){margin-bottom: 5rem;}
 
 
 
