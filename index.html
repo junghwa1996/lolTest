@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,28 @@
   <title>롤 뇌치고사</title>
   <link rel="stylesheet" href="src/css/normalize.css">
   <link rel="stylesheet" href="src/css/common.css">
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+      document.onkeydown = function (e) {
+        if (e.keyCode == 123) {
+          e.preventDefault();
+          e.returnValue = false;
+        }
+      };
+    });
+    document.onmousedown = disableclick;
+    status = "Right click is not available.";
+
+    function disableclick(event) {
+      if (event.button == 2) {
+        alert(status);
+        return false;
+      }
+    }
+  </script>
 </head>
-<body>
+
+<body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
   <div id="wrap">
     <div class="page index">
       <header>
@@ -32,4 +53,5 @@
   </div>
   <script src="src/js/common.js"></script>
 </body>
+
 </html>
