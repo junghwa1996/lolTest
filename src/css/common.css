@@ -96,28 +96,30 @@ input[type="radio"], input[type="checkbox"], select {
 }
 a{
   display: block;
+	text-decoration: none;
 }
 
 body {
 	font-family: 'Noto Sans KR', sans-serif;
 	overflow: hidden;
 	overflow-y: auto;
-	padding-left: calc(100vw - 100%);
 }
 #wrap {
 	width: 100%;
-  max-width: 720px;
 	margin: 0 auto;
 	overflow-x: hidden;
 	z-index: 15;
 }
-.container{width: 100%; margin: 0 auto; padding: 0 3rem;}
+.container{width: 100%; max-width: 720px; margin: 0 auto; padding: 0 3rem; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; overflow-y: auto;}
 /* header */
-header{width: 100%; background-color: #eee; text-align: center; padding: 3rem 0;}
+header{width: 100%; max-width: 720px; background-color: #eee; text-align: center; padding: 3rem 0; position: fixed; left: 50%; top: 0; transform: translateX(-50%);}
 header h1{font-size: 2.5rem; font-weight: bold;}
+/* footer */
+footer{position: fixed; left: 50%; bottom: 0; transform: translateX(-50%); width: 100%; max-width: 720px; background-color: #eee; padding: 3rem; font-size: 2.5rem;}
+footer button{background-color: #aaa; color: #fff; padding: 2rem 4rem; border-radius: 3rem;}
 /* main */
 .main{width: 100%; height: 100%;}
-.main .container{position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.index .main .container{position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
 
 .index .main .title{padding: 5rem 0; text-align: center;}
 .index .main .title h2{font-size: 5rem;}
@@ -126,14 +128,18 @@ header h1{font-size: 2.5rem; font-weight: bold;}
 .index .main .content a{width: 30rem; height: 10rem; margin-left: auto; margin-right: auto;}
 .index .main .content button{width: 100%; height: 100%; background-color: #eee; font-size: 3rem;}
 /* start */
+.start .main{padding-top: 9.4rem; padding-bottom: 12.8rem;}
+.start .title{width: 100%;}
+.start .content{max-width: 720px; width: 100%;}
 .start .count-box{text-align: right; font-size: 3rem; padding: 3rem 0; border-bottom: 1px solid #eee;}
 .start .count-box strong{color: #bbb;}
 
 .start .quiz{text-align: center;}
 .start .quiz .title{padding: 3rem 0; font-size: 5rem;}
-.start .quiz .content{font-size: 3rem; height: 20rem; display: flex; justify-content: center; align-items: center; margin-bottom: 10rem;}
-.start .quiz .answer-btn button{width: 100%; background-color: #eee; height: 20rem; border-radius: 2rem; font-size: 3rem; font-weight: bold;}
-.start .quiz .answer-btn button:not(:last-child){margin-bottom: 5rem;}
+.start .quiz .content{font-size: 3rem; padding: 15rem 0; display: flex; justify-content: center; align-items: center;}
+.start .answer{margin-bottom: 5rem;}
+.start .answer .answer-btn button{width: 100%; background-color: #eee; height: 18rem; border-radius: 2rem; font-size: 3rem; font-weight: bold;}
+.start .answer .answer-btn button:not(:last-child){margin-bottom: 2rem;}
 
 
 
